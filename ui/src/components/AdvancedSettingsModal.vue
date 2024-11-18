@@ -1082,7 +1082,7 @@
           </b-col>
           <b-col cols="12" lg="6">
             <b-button class="mt-2 mt-lg-0" variant="success" type="submit" block :disabled="isSettingsDisabled">
-              Save and Restart Bitcoin Node</b-button
+              Save and Restart Libre Relay</b-button
             >
           </b-col>
         </b-row>

@@ -169,7 +169,7 @@ function settingsToMultilineConfString(settings) {
 
   // mempoolfullrbf
   if (settings.mempoolFullRbf) {
-    umbrelBitcoinConfig.push("# Allow any transaction in the mempool of Bitcoin Node to be replaced with newer versions of the same transaction that include a higher fee."); 
+    umbrelBitcoinConfig.push("# Allow any transaction in the mempool to be replaced with newer versions of the same transaction that include a higher fee."); 
     umbrelBitcoinConfig.push('mempoolfullrbf=1'); 
   }
 
