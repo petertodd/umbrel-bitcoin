@@ -32,8 +32,6 @@ const DEFAULT_ADVANCED_SETTINGS = {
     pruneSizeGB: 300,
   },
   mempoolFullRbf: true,
-  datacarrier: true,
-  datacarriersize: 83,
   permitbaremultisig: true,
   maxmempool: 300,
   mempoolexpiry: 336,
@@ -171,17 +169,6 @@ function settingsToMultilineConfString(settings) {
   if (settings.mempoolFullRbf) {
     umbrelBitcoinConfig.push("# Allow any transaction in the mempool to be replaced with newer versions of the same transaction that include a higher fee."); 
     umbrelBitcoinConfig.push('mempoolfullrbf=1'); 
-  }
-
-  // datacarrier
-  if (!settings.datacarrier) {
-    umbrelBitcoinConfig.push("# Relay transactions with OP_RETURN outputs.");
-    umbrelBitcoinConfig.push('datacarrier=0');
-  } else {
-    // we only set datacarriersize if datacarrier is enabled to keep the umbrel-bitcoin.conf file clean.
-    // datacarriersize
-    umbrelBitcoinConfig.push("# Maximum size of data in OP_RETURN outputs we relay and mine.");
-    umbrelBitcoinConfig.push(`datacarriersize=${settings.datacarriersize}`);
   }
 
   // permitbaremultisig
