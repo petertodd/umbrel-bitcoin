@@ -3,7 +3,7 @@ name: Build and publish Docker image on tag
 on:
   push:
     tags:
-      - 'v*.*.*'
+      - 'libre-relay-v*'
 
 jobs:
   build:
