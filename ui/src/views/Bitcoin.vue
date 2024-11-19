@@ -19,9 +19,9 @@
             </svg>
             <small v-if="isBitcoinCoreOperational" class="ml-1 text-success">Running</small>
             <small v-else class="ml-1 text-warning">Starting</small>
-            <h3 class="d-block font-weight-bold mb-1">Bitcoin Node</h3>
+            <h3 class="d-block font-weight-bold mb-1">Libre Relay</h3>
             <span class="d-block text-muted">{{
-              version ? `Bitcoin Core ${version}` : "..."
+              version ? `v${version}` : "..."
             }}</span>
           </div>
         </div>

@@ -82,13 +82,7 @@ function validateSettingsRequest(settings) {
   // Replace-By-Fee (RBF)
   checkBooleanSetting({ setting: settings.mempoolFullRbf, settingName: "Replace-By-Fee" });
 
-  // Datacarrier
-  checkBooleanSetting({ setting: settings.datacarrier, settingName: "datacarrier" });
-
-  // Datacarriersize
-  checkNumberSetting({ setting: settings.datacarriersize, settingName: "datacarriersize", min: 0 });
-
-  // Datacarriersize
+  // Permit Bare Multisig
   checkBooleanSetting({ setting: settings.permitbaremultisig, settingName: "permitbaremultisig" });
 
   // Maximum Mempool Size

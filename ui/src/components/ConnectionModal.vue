@@ -2,7 +2,7 @@
   <div
     class="px-2 px-sm-3 pt-2 d-flex flex-column justify-content-between w-100 mt-n4"
   >
-    <h3>Connect to Bitcoin Node</h3>
+    <h3>Connect to Libre Relay</h3>
     <p class="text-muted mb-md-4">
         Connect any wallet that supports Bitcoin Core's RPC or P2P connection to your node using these details.
     </p>
@@ -30,7 +30,7 @@
               <b-col cols="12" lg="6">
                 <label class="mb-1 d-block"
                   ><small class="font-weight-bold"
-                    >Bitcoin Core RPC Username</small
+                    >RPC Username</small
                   ></label
                 >
                 <input-copy
@@ -49,7 +49,7 @@
               <b-col cols="12" lg="6">
                 <label class="mb-1 d-block"
                   ><small class="font-weight-bold"
-                    >Bitcoin Core RPC Password</small
+                    >RPC Password</small
                   ></label
                 >
                 <input-copy
@@ -68,7 +68,7 @@
               <b-col cols="12" lg="6">
                 <label class="mb-1 d-block"
                   ><small class="font-weight-bold"
-                    >Bitcoin Core RPC Address (Host)</small
+                    >RPC Address (Host)</small
                   ></label
                 >
                 <input-copy
@@ -87,7 +87,7 @@
               <b-col cols="12" lg="6">
                 <label class="mb-1 d-block"
                   ><small class="font-weight-bold"
-                    >Bitcoin Core RPC Port</small
+                    >RPC Port</small
                   ></label
                 >
                 <input-copy 
@@ -108,7 +108,7 @@
           <div v-if="chosenMode === 'p2pLocal' || chosenMode === 'p2pTor'">
             <label class="mb-1 d-block"
               ><small class="font-weight-bold"
-                >Bitcoin Core P2P Address (Host)</small
+                >P2P Address (Host)</small
               ></label
             >
             <div v-if="p2p.torAddress">
@@ -120,7 +120,7 @@
             </div>
             <label class="mb-1 d-block"
               ><small class="font-weight-bold"
-                >Bitcoin Core P2P Port</small
+                >P2P Port</small
               ></label
             >
             <div v-if="p2p.port">
